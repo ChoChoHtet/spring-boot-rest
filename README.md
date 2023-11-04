@@ -82,9 +82,8 @@ Sample Response
     }
 }
 ```
-> [!NOTE] Customized spring data path 
-
-   
+> [!NOTE] 
+Customized spring data path
 - By configure properties file
 `spring.data.rest.base-path=/magic-api`
 
