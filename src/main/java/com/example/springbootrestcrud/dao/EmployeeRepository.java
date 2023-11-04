@@ -1,4 +1,4 @@
-package com.example.springbootrestcrud.springjpa.dao;
+package com.example.springbootrestcrud.dao;
 
 import com.example.springbootrestcrud.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;

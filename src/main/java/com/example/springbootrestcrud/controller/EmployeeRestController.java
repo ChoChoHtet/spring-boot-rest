@@ -1,10 +1,9 @@
-package com.example.springbootrestcrud.rest;
+package com.example.springbootrestcrud.controller;
 
 import com.example.springbootrestcrud.entity.Employee;
 import com.example.springbootrestcrud.service.EmployeeService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,7 +20,7 @@ public class EmployeeRestController {
     private EmployeeService employeeService;
 
     @Autowired
-    public EmployeeRestController(@Qualifier("employeeServiceImpl") EmployeeService employeeService) {
+    public EmployeeRestController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 
